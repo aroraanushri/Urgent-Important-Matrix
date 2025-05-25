@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eisenhower Matrix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="matrix-title">Eisenhower Matrix</h1>
+  <div class="matrix">
+    <div class="quadrant do" id="do-list">
+      <h2>DO</h2>
+      <p>Urgent and important tasks that need to be done right away.<br>
+      <span class="example"></span></p>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="quadrant decide" id="decide-list">
+      <h2>Decide</h2>
+      <p>These tasks are important but not urgent.<br>
+      <span class="example"></span></p>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="quadrant delegate" id="delegate-list">
+      <h2>Delegate</h2>
+      <p>Urgent but not important tasks.<br>
+      <span class="example"></span></p>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="quadrant delete" id="delete-list">
+      <h2>Delete</h2>
+      <p>Neither urgent nor important.<br>
+      <span class="example"></span></p>
+      <ul class="task-list"></ul>
+    </div>
+  </div>
+  <button id="addTaskBtn">Add Task</button>
+  <!-- Modal (unchanged) -->
+  <div id="taskModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Add Task</h2>
+      <input id="taskTitle" type="text" placeholder="Task Title" />
+      <textarea id="taskDesc" placeholder="Task Description"></textarea>
+      <select id="taskQuadrant">
+        <option value="do">Do</option>
+        <option value="decide">Decide</option>
+        <option value="delegate">Delegate</option>
+        <option value="delete">Delete</option>
+      </select>
+      <div style="text-align:right;">
+        <button id="saveTaskBtn">Save</button>
+        <button onclick="document.getElementById('taskModal').classList.add('hidden')">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

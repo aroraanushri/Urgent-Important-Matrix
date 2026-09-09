@@ -32,4 +32,4 @@ A simple web app for managing tasks using the Eisenhower Matrix (Urgent-Importan
 
 This project is licensed under the [Apache 2.0 License](LICENSE).
 
-<img width="1276" height="808" alt="image" src="https://github.com/user-attachments/assets/5b1e5227-62dd-40d9-b264-0333851f49c2" />
+<img width="1276" height="808" alt="image" src="https://github.com/user-attachments/assets/5c500b71-a672-461c-bfe5-0ce6caf67c4e" />
